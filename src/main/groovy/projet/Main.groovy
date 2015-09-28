@@ -1,5 +1,4 @@
-package fr.uvsq.doosa.gradletuto
-
+package projet
 class Main {
     static void main(def args) {
         Main m = new Main()
@@ -7,6 +6,6 @@ class Main {
     }
 
     String returnHello() {
-        'Hello'
+        'Hello tous le monde'
     }
 }
