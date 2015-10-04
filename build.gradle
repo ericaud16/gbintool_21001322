@@ -7,6 +7,13 @@ apply plugin: 'groovy'
 apply plugin: 'application'
 mainClassName = 'projet.Main'
 
+task compile << {
+println "Executing the compile task"
+}
+
+task other(dependsOn: 'compile') << { println "I m not a default task!"
+}
+
 repositories {
     mavenCentral()
 }
@@ -16,5 +23,3 @@ dependencies {
     testCompile 'junit:junit:4.+'
 }
 
-
-task hello << {println 'HELLO GRADLE'}
